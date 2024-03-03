@@ -1,0 +1,89 @@
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.studform{
+    margin: 20px;
+}
+
+.studContainer{
+    width: 99vw;
+    height: 100vh;
+    border: 5px solid rgb(32, 131, 231);
+    margin: auto;
+    background-color: rgb(0, 115, 164);
+    color: rgb(255, 255, 255);
+    background-image: url(./formgallary/blackbg.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* text-shadow: 200px black; */
+}
+.formclass{
+    justify-content: center;
+    margin-left: 30%;
+}
+.formdeisgn{
+    padding: 10px;
+}
+.inputclass{
+    width: 380px;
+    height: 35px;
+    border-radius: 5px;
+    background: transparent;
+    border: 3px solid white; 
+    color: white;
+}
+.inputselect{
+    width: 380px;
+    height: 30px;
+    border-radius: 5px;
+    background: transparent;
+    border: 3px solid white; 
+    /* color: white; */
+}
+.inputclass:hover{
+    transform: scale(1.04);  
+}
+.spantext{
+    font-size: 20px;
+}
+::placeholder{
+    font-weight: 10px;
+    color:white;
+    font-size: 15px;
+}
+.but{ 
+    width: 85px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 150px;
+    margin-top: 0.5px;
+}
+.but:hover{
+    transform: scale(1.04);  
+}
+#area{
+    width:380px;
+    height: 70px;
+    border-radius: 8px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+
+}
+#inputdate{
+    color: white;
+    width: 380px;
+    height: 30px;
+}
+#inputdata:hover{
+    transform: scale(1.04);  
+}
+#area:hover{
+    transform: scale(1.04);  
+}

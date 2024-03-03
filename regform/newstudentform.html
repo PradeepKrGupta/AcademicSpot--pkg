@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Details Form</title>
+</head>
+<link rel="stylesheet" href="formstyle.css">
+<link rel="stylesheet" href="../mainpage/style.css">
+
+
+
+<body>
+    <header>
+        <div class="container">
+
+            <ul>
+                <img src="https://banner2.cleanpng.com/20180508/alw/kisspng-amrita-vishwa-vidyapeetham-amritapuri-campus-amrit-5af20a9af353f7.8596599915258118669967.jpg"
+                    alt="unable to load" id="logo">
+                <li class="navitem" id="item-1"><a href="../index.html"> Home</a> </li>
+                <li class="navitem" id="item-2"><a href="#"> About</a> </li>
+                <li class="navitem" id="item-3"><a href="#"> Subjects</a>
+                    <div class="drop-subject-1">
+                        <ul>
+                            <li><a href="../mainpage/phy.html" target="_blank">19Phy101</a></li>
+                            <li><a href="../mainpage/discrete.html" target="_blank">19MAT115-B</a></li>
+                            <li><a href="../mainpage/cplab.html" target="_blank">19CSE102.lab</a></li>
+                            <li><a href="../mainpage/EEE.html" target="_blank">19EEE111</a></li>
+                            <li><a href="../mainpage/linear-algebra.html" target="_blank">19MAT112-B</a></li>
+                            <li><a href="../mainpage/cul.html" target="_blank">19Cul111</a></li>
+                            <li><a href="../mainpage/uid.html" target="_blank">19CSE103</a></li>
+                            <li><a href="../mainpage/fds.html" target="_blank">19CSE111</a></li>
+                            <li><a href="../mainpage/EEElab.html" target="_blank">19EEE182.lab</a></li>
+                            <li><a href="../mainpage/uidlab.html" target="_blank">19CSE103.lab</a></li>
+                            <li><a href="../main page/MEE.html" target="_blank">19MEE181.lab</a></li>
+                            <li><a href="../mainpage/cptheory.html" target="_blank">19CSE102</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem" id="item-4"><a href="#"> Teachers</a>
+                    <div class="drop-subject-2">
+                        <ul>
+                            <li><a href="../mainpage/phy.html" target="_blank">Dr.M Dharani</a></li>
+                            <li><a href="../mainpage/discrete.html" target="_blank">Dr.Geetha K N</a></li>
+                            <li><a href="../mainpage/cptheory.html" target="_blank">Mr.Vishwas H N</a></li>
+                            <li><a href="../mainpage/EEE.html" target="_blank">Dr.Mahalakshmi D</a></li>
+                            <li><a href="../mainpage/linear-algebra.html" target="_blank">Dr.Kesavulu Naidu</a></li>
+                            <li><a href="../mainpage/cul.html" target="_blank">Dr.TanashreeRedij</a></li>
+                            <li><a href="../mainpage/uid.html" target="_blank">Ms.Nalini Sampath</a></li>
+                            <li><a href="../mainpage/fds.html" target="_blank">Dr.Uma Maheshwari</a></li>
+                            <li><a href="../mainpage/EEElab.html" target="_blank">Dr.Ram Prabhakar J</a></li>
+                            <li><a href="../mainpage/MEE.html" target="_blank">Mr.Dileep B P</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem" id="item-4"><a href="../regform/newstudentform.html"> Registration form</a> </li>
+            </ul>
+
+            <div class="social">
+                <ul>
+                    <a href="https://www.youtube.com/user/AmritaUniversity" target="_blank"><img src="../mainpage/Gallary/youtube.png" alt="" class="socialIcons"></a>
+                    <a href="https://twitter.com/AMRITAedu" target="_blank"><img src="../mainpage/Gallary/twitter.png" alt="" class="socialIcons"></a>
+                    <a href="https://www.instagram.com/amrita_university/" target="_blank"><img src="../mainpage/Gallary/instagram.png" alt="" class="socialIcons"></a>
+                    <a href="https://www.facebook.com/AmritaUniversity" target="_blank"><img src="../mainpage/Gallary/facebook.png" alt="" class="socialIcons"></a>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" name="search" placeholder="Search" id="inputSearch" autofocus>
+                <img src="../mainpage/Gallary/search.png" alt="unable to load" id="imgSearch">
+            </div>
+        </div>
+    </header>
+    <div class="studContainer">
+        <u><h2>STUDENT&nbsp; REGISTRATION &nbsp;FORM</h2></u>
+        <div class="studform">
+            <form action="../index.html" name="myform" method="post" class="formclass" onsubmit="return validation()">
+                <div class="formdeisgn" id="filesname">
+                    <span class="spantext"> Student Image:</span>&ensp;<input type="file" name="file" class="inputclass"
+                    ><b>&ensp;<span>(size less then 5 MB)</span></b>
+                </div>
+
+                <div class="formdeisgn" id="sname">
+                    <span class="spantext"> Student Name:</span>&ensp;<input type="text" name="fname" class="inputclass"
+                        placeholder="Student Fullname" required >&nbsp;<b><span class="formerror"  style="color:red"></span></b>
+                </div>
+
+                <div class="formdeisgn" id="fathename">
+                    <span class="spantext"> Father's Name:</span>&ensp;<input type="text" name="fathname"
+                        class="inputclass" placeholder="Father's Full Name" required >&nbsp;<b><span
+                            class="formerror" style="color:red"></span></b>
+                </div>
+
+                <div class="formdeisgn" id="gender">
+                    <span class="spantext"> Gender: </span>&emsp;&emsp;&emsp;&nbsp;
+                    <span class="spantext"> Male</span><input type="radio" name="fgender" class=" L1"><b><span
+                            class="formerror"></span></b>
+                    <span class="spantext"> Female</span><input type="radio" name="fgender" class=" L1"><b><span
+                            class="formerror"></span></b>
+                    <span class="spantext"> Others</span><input type="radio" name="fgender" class=" L1"><b><span
+                            class="formerror"></span></b>
+                </div>
+
+                <div class="formdeisgn" id="date">
+                    <span class="spantext"> Date of Birth:</span>&emsp;&nbsp;<input type="date" name="fdate"
+                        class="inputclass" id="inputdate" ><b><span class="formerror"></span></b>
+                </div>
+
+                <div class="formdeisgn" id="email">
+                    <span class="spantext"> E-mail:</span>&emsp;&emsp;&emsp;&ensp;&ensp;&nbsp;<input type="email"
+                        name="femail" placeholder="xyz@gmail.com" class="inputclass" required >&nbsp;<b><span
+                            class="formerror" style="color:red"></span></b>
+                </div>
+
+                <div class="formdeisgn" id="branch">
+                    <span class="spantext">Branch:</span>&emsp;&emsp;&emsp;&ensp;&ensp;
+                    <select name="fbranch"  class="inputselect"><b><span class="formerror"></span></b>
+                        <option value="NULL">Select your choice</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="ME"> Mechanical Engineering</option>
+                        <option value="AIE">Artificial Intelligence Engineering</option>
+                        <option value="EEE">Electrical and Electronics Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                    </select> <br><br>
+                </div>
+
+                <div class="formdeisgn" id="year">
+                    <span class="spantext"> Select Year:</span>&emsp;&emsp;
+                    <input type="checkbox" class=" L1" name="Year">1<sup>st</sup>
+                    <input type="checkbox" class=" L1" name="Year">2<sup>nd</sup>
+                    <input type="checkbox" class=" L1" name="Year">3<sup>rd</sup>
+                    <input type="checkbox" class=" L1" name="Year">4<sup>th</sup>
+                    </select>
+                </div>
+
+                <div class="formdeisgn" id="phone">
+                    <span class="spantext"> Tel/Mobile:</span>&emsp;&emsp;&nbsp;<input type="phone" name="fphone"
+                        class="inputclass" placeholder="xxx xxx xxxx"  required>&nbsp;<b><span class="formerror" style="color:red"></span></b>
+                </div>
+
+                <div class="formdeisgn" id="feedback">
+                    <span class="spantext"> feedback:</span>&emsp;&emsp;&emsp;
+                    <textarea name="farea" id="area" placeholder="Enter your feedback"></textarea><span class="formerror"></span></b>
+                </div>
+
+                <div id="but">
+                    <input type="submit" class="but" value="Submit">
+                <input type="reset" class="but" value="Reset">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./formJs.js"></script>
+    
+</body>
+
+</html>

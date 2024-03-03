@@ -1,0 +1,406 @@
+<!-- CP Theory page -->
+<!-- Physics page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Academic Spot</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .shortcutlink {
+            width: 10%;
+            top: 0;
+            margin-left: 0%;
+            background-color: rgb(0, 0, 0);
+            height: 81vh;
+            position: absolute;
+            margin-top: 137px;
+            cursor: pointer;
+
+        }
+
+
+        .shortcutlink p {
+            margin-left: 10px;
+            color: white;
+        }
+
+        .shortcutlink a {
+            display: flex;
+            /* color: black; */
+            margin-bottom: 30px;
+            font-size: 16px;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            text-decoration: none;
+
+        }
+
+        .iconhover:hover {
+            background-color: rgb(14, 106, 163);
+
+        }
+
+
+        .shortcutlink a img {
+            width: 20px;
+            height: 20px;
+            filter: invert();
+        }
+
+        .shortcutlink a img,
+        p {
+            margin-top: 20px;
+
+
+        }
+
+        .shortcutlink hr {
+            width: 85%;
+            height: 1px;
+            color: rgb(14, 106, 163);
+
+        }
+
+        /* -------On click CSS after javascript------ */
+        .menuicon {
+            width: 35px;
+            height: 35px;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding: 5px;
+            filter: invert();
+
+        }
+
+        .smallsidebar {
+            width: 4%;
+
+        }
+
+        .smallsidebar a p {
+            display: none;
+        }
+
+        /* main section adding subject name and name of the professor */
+        .teacher_intro {
+            width: 100%;
+            height: 20%;
+
+        }
+
+        .teacher_intro img {
+            display: block;
+            width: 1300px;
+            height: 570px;
+            border-radius: 40px;
+            margin: 10px 0px 10px 185px;
+        }
+
+        .expandIntro {
+            /* margin-left: 6%; */
+            width: 93%;
+        }
+
+        /* Here we are writing CSS for Video frame work */
+
+        .video_section {
+            /* border: 2px solid black; */
+            display: block;
+
+        }
+
+        .subject_video {
+            display: none;
+        }
+
+        .subject_video {
+            border: 10px solid rgb(0, 0, 0);
+            margin: 0px 0px 0px 170px;
+            color: black;
+            width: 88%;
+            height: 100%;
+
+
+        }
+
+        .subject_video video {
+            width: 300px;
+            height: 250px;
+            margin: 8px 8px 12px 15px;
+        }
+        .para1{
+            display: none;
+        }
+
+        /* Video display after clicking on video icon Javascript used */
+        .teacherImage1 img {
+            display: none;
+        }
+        .shortlink{
+            width: 10%;
+            top: 0;
+            margin-left: 0%;
+            background-color: rgb(0, 0, 0);
+            height: 102.2vh;
+            position: absolute;
+            margin-top: 137px;
+            cursor: pointer;
+        }
+
+        .videoResume {
+            display: block;
+
+        }
+        .videoResume video:hover{
+            transform: scale(1.1);
+        }
+        .parag1{
+            display: block;
+        }
+
+        .lecture{
+            font-size: 20px;
+            text-align: center;
+            margin-left: 85px;
+            margin-bottom: 15px;
+            margin-top: -2px;
+            color: rgb(255, 255, 255);
+            background-color:rgb(166, 22, 5);
+            width: 160px;
+            border: 3px solid black;
+
+        }
+        .material{
+            font-size: 20px;
+            text-align: center;
+            margin-left: 30px;
+            margin-bottom: -10px;
+            margin-top: -15px;
+            color: rgb(255, 255, 255);
+            background-color:rgb(5, 99, 166);
+            width: 160px;
+            border: 3px solid black;
+
+        }
+        /* ---------------------------material section--------------- */
+        .material_section{
+            width: 90%;
+            height: 100%;
+            margin-left: 157px;
+            
+        }
+        .subject_material img{
+            width: 180px;
+            height: 180px;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+
+        }
+        .subject_material img:hover{
+            transform: scale(1.1);
+        }
+        .subject_material{
+            display: none;
+        }
+        .para2{
+            display: none;
+        }
+        
+        /* -------After using javascript for material section-------------- */
+
+        .teacherImg2{
+            display: none;
+        }
+        .video_Resume{
+            display: none;
+        }
+        .material_sub{
+            display: block;
+        }
+        .parag2{
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <ul>
+                <img src="https://banner2.cleanpng.com/20180508/alw/kisspng-amrita-vishwa-vidyapeetham-amritapuri-campus-amrit-5af20a9af353f7.8596599915258118669967.jpg"
+                    alt="unable to load" id="logo">
+                <li class="navitem" id="item-1"><a href="../index.html"> Home</a> </li>
+                <li class="navitem" id="item-2"><a href="#"> About</a> </li>
+                <li class="navitem" id="item-3"><a href="#"> Subjects</a>
+                    <div class="drop-subject-1">
+                        <ul>
+                            <li><a href="./phy.html" target="_blank">19Phy101</a></li>
+                            <li><a href="./discrete.html" target="_blank">19MAT115-B</a></li>
+                            <li><a href="./cplab.html" target="_blank">19CSE102.lab</a></li>
+                            <li><a href="./EEE.html" target="_blank">19EEE111</a></li>
+                            <li><a href="./linear-algebra.html" target="_blank">19MAT112-B</a></li>
+                            <li><a href="./cul.html" target="_blank">19Cul111</a></li>
+                            <li><a href="./uid.html" target="_blank">19CSE103</a></li>
+                            <li><a href="./fds.html" target="_blank">19CSE111</a></li>
+                            <li><a href="./EEElab.html" target="_blank">19EEE182.lab</a></li>
+                            <li><a href="./uidlab.html" target="_blank">19CSE103.lab</a></li>
+                            <li><a href="./MEE.html" target="_blank">19MEE181.lab</a></li>
+                            <li><a href="./cptheory.html" target="_blank">19CSE102</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem" id="item-4"><a href="#"> Teachers</a>
+                    <div class="drop-subject-2">
+                        <ul>
+                            <li><a href="./phy.html" target="_blank">Dr.M Dharani</a></li>
+                            <li><a href="./discrete.html" target="_blank">Dr.Geetha K N</a></li>
+                            <li><a href="./cptheory.html" target="_blank">Mr.Vishwas H N</a></li>
+                            <li><a href="./EEE.html" target="_blank">Dr.Mahalakshmi D</a></li>
+                            <li><a href="./linear-algebra.html" target="_blank">Dr.Kesavulu Naidu</a></li>
+                            <li><a href="./cul.html" target="_blank">Dr.TanashreeRedij</a></li>
+                            <li><a href="./uid.html" target="_blank">Ms.Nalini Sampath</a></li>
+                            <li><a href="./fds.html" target="_blank">Dr.Uma Maheshwari</a></li>
+                            <li><a href="./EEElab.html" target="_blank">Dr.Ram Prabhakar J</a></li>
+                            <li><a href="./MEE.html" target="_blank">Mr.Dileep B P</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navitem" id="item-4"><a href="../regform/newstudentform.html"> Registration form</a> </li>
+            </ul>
+
+            <div class="social">
+                <ul>
+                    <a href="https://www.youtube.com/user/AmritaUniversity" target="_blank"><img src="./Gallary/youtube.png" alt="" class="socialIcons"></a>
+                    <a href="https://twitter.com/AMRITAedu" target="_blank"><img src="./Gallary/twitter.png" alt="" class="socialIcons"></a>
+                    <a href="https://www.instagram.com/amrita_university/" target="_blank"><img src="./Gallary/instagram.png" alt="" class="socialIcons"></a>
+                    <a href="https://www.facebook.com/AmritaUniversity" target="_blank"><img src="./Gallary/facebook.png" alt="" class="socialIcons"></a>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" name="search" placeholder="Search" id="inputSearch" autofocus>
+                <img src="./Gallary/search.png" alt="unable to load" id="imgSearch">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="shortcutlink">
+            <img src="./Gallary/menu.png" alt="unable to load" class="menuicon">
+            <a href="../index.html" class="iconhover"><img src="./Gallary/home.png" alt="unable to load">
+                <p>Home</p>
+            </a>
+            <a href="#" class="iconhover videoplay"><img src="./Gallary/play-button.png" alt="unable to load">
+                <p>Videos</p>
+            </a>
+            <a href="#" class="iconhover materialplay"><img src="./Gallary/file.png" alt="unable to load">
+                <p>Materials</p>
+            </a>
+            <hr>
+        </div>
+    </section>
+
+    <section class="main_section">
+        <div class="teacher_intro">
+
+            <img src="./Gallary/Vishwas.jpg" alt="unable to load">
+            </ul>
+        </div>
+    </section>
+    <section class="video_section">
+        <table border="0" class="subject_video">
+            <p style="font-size:50px; color: rgb(14, 106, 163); text-align: center;" class="para1">COMPUTER PROGRAMMING THEORY RECORDINGS VIDEOS</p> 
+            <tr>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 1</p></td>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 2</p></td>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 3</p></td>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 4</p></td>
+            </tr>
+            <tr>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 5</p></td>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 6</p></td>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 7</p></td>
+                <td><video
+                        src="https://aseblr.sharepoint.com/:v:/r/sites/B.Tech.2021.R.CSE.19PHY101949/Shared%20Documents/General/Recordings/19PHY101_20220317_025138.mp4?"
+                        controls>2022 May 22</video><p class="lecture">Lecture 8</p></td>
+            </tr>
+        </table>
+
+    </section>
+    <section class="material_section">
+        <table border="0" class="subject_material">
+            <tr>
+                <td colspan="6">
+                    <p style="font-size:50px; color: rgb(14, 106, 163); text-align: center;" class="para2">COMPUTER PROGRAMMING THEORY MATERIALS PDF</p> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 1</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 2</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 3</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 4</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 5</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 6</p> </td>
+            </tr>
+            <tr>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 7</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 8</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 9</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 10</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 11</p> </td>
+                <td><a
+                        href="https://aseblr.sharepoint.com/:p:/s/B.Tech.2021.R.CSE.19PHY101949/EU6-8Mm-mVlJni2KX6iPf_ABXE3Tf4gC8LA8vgAPk63LLA?e=bDYSjP" target="_blank"><img
+                            src="./Gallary/pdf.png" alt=""></a><p class="material">Material 12</p> </td>
+                
+            </tr>
+
+           
+        </table>
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

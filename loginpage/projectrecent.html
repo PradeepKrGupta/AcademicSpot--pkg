@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="loginstyle.css">
+
+  <!-- jQuery CDN Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>UID Project</title>
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="new.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="form">
+      <div class="btn">
+        <button class="signUpBtn">SIGN UP</button>
+        <button class="loginBtn">LOG IN</button>
+      </div>
+      <form class="signUp" action="" method="get" name="myform1" onsubmit="return loginvalidation()">
+        <div class="formGroup" id="logname">
+          <input type="text" id="userName" placeholder="Registration No." name="loginname">
+          <span class="loginerror" style="color:red"></span>
+        </div>
+        <div class="formGroup" id="logemail">
+          <input type="email" placeholder="Email ID" name="email" required>
+          <span class="loginerror" style="color:red"></span>
+        </div>
+        <div class="formGroup" id="logpass">
+          <input type="password" id="password" placeholder="Password" required name="pass">
+          <span class="loginerror" style="color:red"></span>
+        </div>
+        <div class="formGroup" id="logcpass">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required name="cpass">
+          <span class="loginerror" style="color:red"></span>
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <a href="../index.html"><button type="submit" class="logbutton">login</button></a>
+        </div>
+
+      </form>
+
+      <!------ Login Form -------- -->
+      <form class="login" action="" method="get" name="myform2" onsubmit="return loginvalidation()">
+
+        <div class="formGroup" id="logagainemail">
+          <input type="email" placeholder="Email ID" name="lemail" required name="loemail">
+          <span class="loginerror" style="color:red"></span>
+        </div>
+        <div class="formGroup" id="lagagainpass">
+          <input type="password" id="password" placeholder="Password" required name="lopass">
+          <span class="loginerror" style="color:red"></span>
+
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">Keep me signed in on this device</span>
+        </div>
+        <div class="formGroup">
+          <a href="../index.html"><button type="submit" class="logbutton">login</button></a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+  <script src="./jQuery.js"></script>
+</body>
+
+</html>
